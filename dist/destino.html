@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4d5359">
+  <meta name="description" content="Descubre Cancún, explora hospedajes y encuentra inspiración para tu viaje con AventuGo.">
+  <title>Cancún, México | AventuGo</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/destination.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AventuGo, inicio"><span class="brand-mark"><img src="assets/logo.png" alt="" width="78" height="78"></span><span>aventu<span>Go</span></span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Descubrir</a><a href="destino.html" aria-current="page">Destino Cancún</a><a href="hotel.html">Hospedaje</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-ghost" type="button" data-dialog="saved-dialog">Mis favoritos <span data-favorite-count>0</span></button>
+        <button class="icon-button" type="button" data-dialog="about-dialog" aria-label="Acerca de AventuGo"><img src="assets/user.png" alt="" width="45" height="43"></button>
+        <button class="icon-button" type="button" data-dialog="settings-dialog" aria-label="Preferencias de visualización"><img src="assets/settings.png" alt="" width="40" height="40"></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Cancún, México</span></nav>
+    <section class="destination-hero" aria-labelledby="destination-title">
+      <img src="assets/cancun.png" alt="Mar y costa de Cancún" width="1184" height="400" fetchpriority="high">
+      <div class="hero-bottom"><div><span class="pill">México · Caribe</span><h1 id="destination-title">Cancún</h1><p>Días junto al mar, cenotes y lugares que se quedan contigo. Empieza a explorar tu próxima escapada.</p></div><a class="button button-mint" href="#hotels">Encontrar hospedaje <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section" aria-labelledby="flights-title">
+      <div class="section-head"><div><p class="eyebrow">01 / Cómo llegar</p><h2 id="flights-title">De CDMX a Cancún</h2></div><span class="small muted">Elige tu preferencia</span></div>
+      <fieldset class="airlines-fieldset"><legend class="sr-only">Preferencia de aerolínea</legend><div class="airlines">
+        <label class="airline"><input type="radio" name="airline" value="Aeroméxico"><span class="airline-logo aeromexico"><img src="assets/aeromexico.png" alt="Aeroméxico" width="130" height="60"></span></label>
+        <label class="airline"><input type="radio" name="airline" value="Viva"><span class="airline-logo"><img src="assets/viva.png" alt="Viva" width="130" height="60"></span></label>
+        <label class="airline"><input type="radio" name="airline" value="Volaris"><span class="airline-logo"><img src="assets/volaris.png" alt="Volaris" width="130" height="60"></span></label>
+      </div></fieldset>
+      <p class="small muted">Preferencias de la demostración. No se consultan vuelos, tarifas ni disponibilidad.</p>
+    </section>
+    <section id="hotels" class="section" aria-labelledby="hotels-title">
+      <div class="section-head"><div><p class="eyebrow">02 / Tu lugar para descansar</p><h2 id="hotels-title">Hospedajes en Cancún</h2></div><span class="small muted">Selección del diseño</span></div>
+      <div class="hotels-grid">
+        <article class="hotel-card"><img class="card-photo" src="assets/garza-card.png" alt="Piscina y palmeras de Garza Blanca Resort" width="380" height="212" loading="lazy"><div class="card-body"><span class="pill">Hospedaje destacado</span><h3>Garza Blanca Resort</h3><p>Playa, piscinas y espacios para disfrutar en familia.</p><a class="button button-light" href="hotel.html">Conocer el hospedaje <span aria-hidden="true">↗</span></a></div></article>
+        <article class="hotel-card"><img class="card-photo" src="assets/moon-palace.png" alt="Vista aérea del resort Moon Palace" width="380" height="212" loading="lazy"><div class="card-body"><span class="pill">Inspiración</span><h3>Moon Palace</h3><p>Una propuesta junto al mar para una escapada al Caribe.</p><span class="caption">Forma parte de la selección visual de AventuGo.</span></div></article>
+        <article class="hotel-card"><img class="card-photo" src="assets/renaissance.png" alt="Edificio de Renaissance Resort" width="380" height="212" loading="lazy"><div class="card-body"><span class="pill">Inspiración</span><h3>Renaissance Resort</h3><p>Otro punto de partida para imaginar tus días en Cancún.</p><span class="caption">Forma parte de la selección visual de AventuGo.</span></div></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="activities-title">
+      <div class="section-head"><div><p class="eyebrow">03 / Sal a descubrir</p><h2 id="activities-title">No te puedes perder</h2></div></div>
+      <div class="activity-grid">
+        <article class="activity-card"><img src="assets/cenote.png" alt="Cenote rodeado de vegetación" width="370" height="210" loading="lazy"><div><h3>Cenote Verde Lucero</h3><p>Un encuentro con el agua y la naturaleza.</p></div></article>
+        <article class="activity-card"><img src="assets/chichen-itza.png" alt="Zona arqueológica de Chichén Itzá" width="370" height="210" loading="lazy"><div><h3>Chichén Itzá</h3><p>Historia y arquitectura para mirar con calma.</p></div></article>
+        <article class="activity-card"><img src="assets/xcaret.png" alt="Paisaje de Xcaret" width="370" height="210" loading="lazy"><div><h3>Xcaret</h3><p>Un día para explorar los colores de la región.</p></div></article>
+      </div>
+    </section>
+    <aside class="trip-toolbar"><div><h3>¿Cancún está en tu lista?</h3><p class="small">Guárdalo para volver a encontrarlo cuando quieras.</p></div><button type="button" class="button button-mint" data-save="cancun" aria-pressed="false">Guardar destino</button></aside>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><span>aventu<span>Go</span></span></a><p>Proyecto de demostración. Contenido basado en el diseño AventuGo; las selecciones se guardan solo en este navegador y no se realizan reservas ni cobros.</p></div></footer>
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <a href="index.html"><img src="assets/home.png" alt="" width="26" height="27"><span>Inicio</span></a>
+    <a href="destino.html" aria-current="page"><img src="assets/flight.png" alt="" width="26" height="27"><span>Cancún</span></a>
+    <a href="hotel.html"><img src="assets/calendar.png" alt="" width="26" height="27"><span>Hospedaje</span></a>
+    <button type="button" data-dialog="saved-dialog"><img src="assets/plan.png" alt="" width="26" height="27"><span>Favoritos</span></button>
+  </nav>
+  <dialog id="saved-dialog" aria-labelledby="saved-title"><div class="dialog-head"><h2 id="saved-title">Tus favoritos</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar favoritos">×</button></div><p id="no-saved">Aún no has guardado destinos. Toca el corazón de una tarjeta para empezar.</p><ul id="saved-list" class="saved-list"></ul><p class="small muted">Se conservan en este navegador cuando el almacenamiento está disponible.</p></dialog>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-head"><h2 id="settings-title">A tu manera</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar preferencias">×</button></div><label><input id="compact-setting" type="checkbox"> Reducir el espacio entre secciones</label><p class="small muted">Esta preferencia se aplica a las tres páginas.</p></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-head"><h2 id="about-title">Conoce AventuGo</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar información">×</button></div><div class="dialog-body"><p>Un espacio para descubrir destinos, explorar hospedajes y empezar a imaginar tu próximo viaje.</p><p>Esta versión es una demostración interactiva. El recorrido disponible conecta Inicio, Cancún y Garza Blanca Resort. Los demás destinos se pueden buscar y guardar como inspiración.</p><a class="button button-mint" href="destino.html">Descubrir Cancún</a></div></dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="notice container">Activa JavaScript para usar la búsqueda, los favoritos y la selección de estancia. Puedes navegar a <a href="destino.html">Cancún</a> y consultar el <a href="hotel.html">hospedaje</a>.</p></noscript>
+</body>
+</html>

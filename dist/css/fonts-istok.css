@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/istok-0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/istok-1.woff2) format('truetype');
+}

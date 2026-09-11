@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4d5359">
+  <meta name="description" content="Consulta la galería y los servicios del hospedaje y prepara una estancia de demostración.">
+  <title>Garza Blanca Resort, Cancún | AventuGo</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/hotel.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AventuGo, inicio"><span class="brand-mark"><img src="assets/logo.png" alt="" width="78" height="78"></span><span>aventu<span>Go</span></span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Descubrir</a><a href="destino.html">Destino Cancún</a><a href="hotel.html" aria-current="page">Hospedaje</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-ghost" type="button" data-dialog="saved-dialog">Mis favoritos <span data-favorite-count>0</span></button>
+        <button class="icon-button" type="button" data-dialog="about-dialog" aria-label="Acerca de AventuGo"><img src="assets/user.png" alt="" width="45" height="43"></button>
+        <button class="icon-button" type="button" data-dialog="settings-dialog" aria-label="Preferencias de visualización"><img src="assets/settings.png" alt="" width="40" height="40"></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><a href="destino.html">Cancún</a><span aria-hidden="true">/</span><span aria-current="page">Garza Blanca Resort</span></nav>
+    <div class="hotel-heading"><div><h1>Garza Blanca Resort</h1><div class="rating"><img src="assets/stars.png" alt="Categoría de cinco estrellas en el diseño" width="193" height="30"><span>Cancún, México</span><span aria-hidden="true">·</span><a class="text-link" href="#amenities">Ver servicios</a></div></div><button type="button" class="button button-ghost" data-save="garza" aria-pressed="false">Guardar hospedaje</button></div>
+    <section class="hotel-gallery" aria-label="Galería de Garza Blanca Resort">
+      <button class="gallery-button" type="button" data-photo="0" aria-label="Ampliar vista principal del hotel"><img src="assets/garza-main.png" alt="Garza Blanca Resort junto a la playa" width="790" height="352" fetchpriority="high"><span class="gallery-label">Ver las 4 fotos</span></button>
+      <button class="gallery-button" type="button" data-photo="1" aria-label="Ampliar fotografía de la recepción"><img src="assets/garza-lobby.png" alt="Recepción del resort" width="380" height="170"></button>
+      <button class="gallery-button" type="button" data-photo="2" aria-label="Ampliar fotografía de la sala de descanso"><img src="assets/garza-lounge.png" alt="Sala de descanso del resort" width="380" height="170"></button>
+    </section>
+    <div class="hotel-layout">
+      <div class="hotel-information">
+        <section aria-labelledby="about-hotel"><h2 id="about-hotel">Un descanso junto al Caribe</h2><p>Garza Blanca Resort &amp; Spa Cancún combina espacios de descanso, piscinas y una zona de playa privada. Una opción para imaginar un viaje en familia o unos días frente al mar.</p><p>El diseño presenta habitaciones con aire acondicionado, terraza y baño privado, así como opciones de desayuno, restaurantes y servicios de bienestar.</p><p class="small muted">Información de presentación tomada del diseño de Figma. Confirma servicios y condiciones con el alojamiento antes de viajar.</p></section>
+        <section id="amenities" aria-labelledby="amenities-title"><h2 id="amenities-title">Todo para tu estancia</h2><ul class="amenities">
+          <li><img src="assets/wifi.png" alt="" width="30" height="32">Wifi</li><li><img src="assets/air.png" alt="" width="30" height="34">Aire acondicionado</li>
+          <li><img src="assets/family.png" alt="" width="30" height="27">Ambiente familiar</li><li><img src="assets/housekeeping.png" alt="" width="30" height="31">Servicio de limpieza</li>
+          <li><img src="assets/coffee.png" alt="" width="30" height="31">Desayunos</li><li><img src="assets/elevator.png" alt="" width="30" height="31">Ascensor</li>
+          <li><img src="assets/laundry.png" alt="" width="30" height="29">Lavandería</li><li><img src="assets/pool.svg" alt="" width="27" height="27">4 piscinas</li>
+          <li><img src="assets/kids.png" alt="" width="30" height="32">Áreas de juego infantiles</li><li><img src="assets/cutlery.png" alt="" width="30" height="32">Restaurantes</li>
+        </ul></section>
+        <section aria-labelledby="before-title"><h2 id="before-title">Antes de elegir tus fechas</h2>
+          <details class="faq"><summary>¿Esta selección confirma una reserva?</summary><p>No. Es una simulación del recorrido de AventuGo. Guardar la estancia solo conserva tus fechas en este navegador; no contacta al hotel.</p></details>
+          <details class="faq"><summary>¿El precio mostrado es una tarifa real?</summary><p>No. Se usa un precio ficticio de $3,200 MXN por noche para probar el cálculo. No representa una cotización, disponibilidad ni política del alojamiento.</p></details>
+          <details class="faq"><summary>¿Puedo cambiar mi selección?</summary><p>Sí. Después de guardar, pulsa “Cambiar estancia” y modifica las fechas o el número de personas.</p></details>
+        </section>
+      </div>
+      <aside class="booking-card" id="stay" aria-labelledby="stay-title"><span class="pill">Planea tu escapada</span><h2 id="stay-title">Elige tu estancia</h2><p>Prueba las fechas de tu próximo viaje.</p>
+        <form id="booking-form" class="booking-form">
+          <div class="form-row"><label class="form-field" for="arrival">Entrada<input type="date" id="arrival" name="arrival" required></label><label class="form-field" for="departure">Salida<input type="date" id="departure" name="departure" required></label></div>
+          <label class="form-field" for="guests">Personas<select id="guests" name="guests"><option value="1">1 persona</option><option value="2" selected>2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option></select></label>
+          <div class="booking-summary" aria-live="polite"><div class="summary-row"><span id="nights-label">Selecciona las fechas</span><span id="subtotal">—</span></div><div class="summary-row total"><span>Total de ejemplo</span><span id="total">—</span></div></div>
+          <p id="booking-error" class="form-error" role="alert" tabindex="-1" hidden></p>
+          <button class="button button-mint" type="submit">Guardar estancia de prueba</button>
+          <p class="small muted">Tarifa ficticia de $3,200 MXN por noche. No se realizará ningún cobro ni reserva.</p>
+        </form>
+        <div id="booking-success" class="booking-success" tabindex="-1" hidden><h3>Estancia de prueba preparada</h3><p id="stay-summary"></p><p id="stay-persistence" class="small muted"></p><p class="notice">Es una simulación. No se ha reservado con el hotel.</p><button type="button" id="edit-stay" class="button button-light">Cambiar estancia</button></div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><span>aventu<span>Go</span></span></a><p>Proyecto de demostración. Contenido basado en el diseño AventuGo; las selecciones se guardan solo en este navegador y no se realizan reservas ni cobros.</p></div></footer>
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <a href="index.html"><img src="assets/home.png" alt="" width="26" height="27"><span>Inicio</span></a>
+    <a href="destino.html"><img src="assets/flight.png" alt="" width="26" height="27"><span>Cancún</span></a>
+    <a href="hotel.html" aria-current="page"><img src="assets/calendar.png" alt="" width="26" height="27"><span>Hospedaje</span></a>
+    <button type="button" data-dialog="saved-dialog"><img src="assets/plan.png" alt="" width="26" height="27"><span>Favoritos</span></button>
+  </nav>
+  <dialog id="saved-dialog" aria-labelledby="saved-title"><div class="dialog-head"><h2 id="saved-title">Tus favoritos</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar favoritos">×</button></div><p id="no-saved">Aún no has guardado destinos. Toca el corazón de una tarjeta para empezar.</p><ul id="saved-list" class="saved-list"></ul><p class="small muted">Se conservan en este navegador cuando el almacenamiento está disponible.</p></dialog>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-head"><h2 id="settings-title">A tu manera</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar preferencias">×</button></div><label><input id="compact-setting" type="checkbox"> Reducir el espacio entre secciones</label><p class="small muted">Esta preferencia se aplica a las tres páginas.</p></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-head"><h2 id="about-title">Conoce AventuGo</h2><button class="close-dialog" data-close type="button" aria-label="Cerrar información">×</button></div><div class="dialog-body"><p>Un espacio para descubrir destinos, explorar hospedajes y empezar a imaginar tu próximo viaje.</p><p>Esta versión es una demostración interactiva. El recorrido disponible conecta Inicio, Cancún y Garza Blanca Resort. Los demás destinos se pueden buscar y guardar como inspiración.</p><a class="button button-mint" href="destino.html">Descubrir Cancún</a></div></dialog>
+  <dialog id="gallery-dialog" class="lightbox" aria-labelledby="gallery-title"><div class="dialog-head"><h2 id="gallery-title">Garza Blanca Resort</h2><button class="close-dialog" type="button" data-close aria-label="Cerrar galería">×</button></div><img id="gallery-image" src="assets/garza-main.png" alt="Garza Blanca Resort" width="960" height="600"><div class="lightbox-nav"><button id="photo-prev" type="button" aria-label="Fotografía anterior">← Anterior</button><span id="photo-count" role="status" aria-live="polite">1 / 4</span><button id="photo-next" type="button" aria-label="Fotografía siguiente">Siguiente →</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="notice container">Activa JavaScript para usar la búsqueda, los favoritos y la selección de estancia. Puedes navegar a <a href="destino.html">Cancún</a> y consultar el <a href="hotel.html">hospedaje</a>.</p></noscript>
+</body>
+</html>
